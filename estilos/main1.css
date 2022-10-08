@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header header" "menu menu menu menu" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "menu menu menu menu" "main main main main" "footer footer footer footer"; }
   .contenedor-grid-index .cabeza-pagina-index {
     grid-area: header; }
     .contenedor-grid-index .cabeza-pagina-index .logotipo {
@@ -228,7 +228,7 @@ footer {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header header header header " "menu main main main" "footer footer footer footer"; }
+  grid-template-areas: "header header header header " "menu main main main" "footer footer footer footer"; }
 
 .cabeza-pagina-descarga {
   grid-area: header; }
@@ -268,20 +268,23 @@ footer {
   margin: 10px;
   display: flex; }
 
-.imagenes-descarga, .games_list {
+.imagenes-descarga {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%; }
 
 .games_list {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  flex-wrap: wrap; }
 
 .games_list img {
-  padding: 20px 20px;
+  padding: 20px;
   width: 250px;
-  height: 300px; }
+  height: 320px; }
 
 /*-----------menu lateral-------------*/
 .menu-descarga {
@@ -340,14 +343,14 @@ figure:hover figcaption {
 /*---------------fin botones--------------*/
 /*----------------media-descarga---------------*/
 @media (min-width: 360px) {
-  .imagenes-descarga, .games_list {
+  .imagenes-descarga {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
     text-align: center; }
-  .imagenes-descarga img, .games_list img {
+  .imagenes-descarga img {
     display: flex;
     padding: 20px;
     border-radius: 10px;
@@ -355,28 +358,28 @@ figure:hover figcaption {
     height: 300px; } }
 
 @media (min-width: 768px) {
-  .imagenes-descarga, .games_list {
+  .imagenes-descarga {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
     justify-items: center;
     align-items: center;
     text-align: center; }
-  .imagenes-descarga img, .games_list img {
+  .imagenes-descarga img {
     display: flex;
     padding: 20px 20px;
     width: 250px;
     height: 300px; } }
 
 @media (min-width: 768px) and (min-width: 992px) {
-  .imagenes-descarga, .games_list {
+  .imagenes-descarga {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     justify-items: center;
     align-items: center;
     text-align: center; }
-  .imagenes-descarga img, .games_list img {
+  .imagenes-descarga img {
     padding: 20px 20px;
     width: 250px;
     height: 300px; } }
@@ -388,7 +391,7 @@ figure:hover figcaption {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
   .cabeza-pagina-staff {
     grid-area: header; }
   .cuerpo-pagina-staff {
@@ -425,7 +428,7 @@ figure:hover figcaption {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
   .cabeza-pagina-noticias {
     grid-area: header; }
   .cuerpo-pagina-noticias {
@@ -461,7 +464,7 @@ figure:hover figcaption {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
   .cabeza-pagina-contacto {
     grid-area: header; }
   .cuerpo-pagina-contacto {
