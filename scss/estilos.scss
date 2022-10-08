@@ -396,12 +396,12 @@ footer {
 
 
 .games_list {
-@extend .imagenes-descarga;
- // display: flex;
- // justify-content: center;
+//@extend .imagenes-descarga;
+  display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
- // flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .games_list img {
