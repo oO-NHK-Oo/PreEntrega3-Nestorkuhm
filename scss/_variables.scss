@@ -1,0 +1,18 @@
+
+
+
+$colors:("regular": rgb(0, 0, 0), "medium": #EDB4E6, "bold": #B4D2ED  );
+
+@mixin flex($contenido, $item) {
+    display: flex;
+    justify-content: $contenido;
+    grid-area: $item;
+}
+
+
+@mixin titulo ($center, $padd){
+    text-align: $center;
+    padding: $padd;
+}
+
+
